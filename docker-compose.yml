@@ -25,7 +25,7 @@ services:
 
   registry-service:
     build:
-      context: src/registry-service
+      context: backend/src/registry-service
     container_name: registry-service
     image: biznetbb-registry-eureka:v1.0
     env_file:
@@ -47,7 +47,7 @@ services:
 
   gateway-service:
     build:
-      context: src/gateway-service
+      context: backend/src/gateway-service
     container_name: gateway-service
     image: biznetbb-gateway:v1.0
     ports:
@@ -74,7 +74,7 @@ services:
 
   auth-service:
     build:
-      context: src/auth-service
+      context: backend/src/auth-service
     container_name: auth-service
     image: biznetbb-auth-service:v1.0
     ports:
@@ -106,7 +106,7 @@ services:
 
   user-service:
    build:
-     context: src/user-service
+     context: backend/src/user-service
    container_name: user-service
    image: biznetbb-user-service:v1.0
    ports:
@@ -131,6 +131,17 @@ services:
   #    timeout: 10s
   #    retries: 5
   #  command: [ "sh", "-c", "echo 'Auth Service ready to start' && tail -f /dev/null" ]
+
+  frontend:
+    build:
+      context: frontend/
+    container_name: frontend
+    ports: 80
+    depends_on:
+      - gateway-service
+    networks:
+      -biznetbb-network
+
 
 volumes:
   biznetbb-db-data:
