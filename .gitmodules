@@ -1,6 +1,6 @@
 [submodule "backend"]
 	path = backend
-	url = https://github.com/BizNetBB/backend
+	url = https://github.com/Dialosoft/backend
 [submodule "frontend"]
 	path = frontend
-	url = https://github.com/BizNetBB/frontend
+	url = https://github.com/Dialosoft/frontend
