@@ -1,4 +1,4 @@
-# app
+# Dialosoft Forum Software
 
 <p align="center">
     <a href="https://github.com/Dialosoft/frontend"><img src="https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"></a>
