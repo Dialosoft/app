@@ -21,8 +21,6 @@ Let's get started!
 - At least 1GB of disk space
 - At least 1 available CPU core
 
-Let's get started.
-
 ## Deployment
 
 Follow the appropriate commands to get the latest recommended version of this software.
